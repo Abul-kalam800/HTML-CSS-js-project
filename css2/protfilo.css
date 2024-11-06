@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.container-full{
+    width: 100%;
+    background-color: green;
+}
+.container::before,
+.container::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    /* font-family: "Almarai", sans-serif; */
+}
+.buttons{
+    margin-top: 65px;
+}
+
+.btn{
+    padding: 20px 20px;
+    text-transform: capitalize; 
+    background-color: #1b4968;  
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+    font-size: 19px;
+    color: #31da59;
+    transition: all 0.3s;
+    border: 1px solid red;
+    margin-right:10px;
+    letter-spacing: 1px;
+
+
+}
+
+.btn:hover{
+    background-color: #f37311;
+    color: #fafbfb;;
+}
+a{
+    text-decoration: none;
+     
+}
+
+.section-title{
+    font-size: 30px;
+    text-align: center;
+    color: rgb(247, 25, 25);
+    text-transform: capitalize;
+    padding: 50px 0;
+    margin: 50px 0;
+ 
+}
+
+/* Main Css start from here******************* */
+.nabvar {
+    background-color: rgb(17, 16, 50);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 0 auto; */
+    height: 70px;
+    /* width: 100%; */
+    position: fixed;
+    position: relative;
+}
+
+.logo {
+    
+
+    font-size: 1.5rem;
+    color: rgb(16, 135, 28);
+    font-family: "Almarai", sans-serif;
+    font-weight: 700;
+}
+
+.purple {
+    color: purple;
+    font-size: 2rem;
+    font-family: "Almarai", sans-serif;
+    font-weight: 700;
+}
+.nabvar,.list {
+    display: flex;
+    gap: 15px;
+}
+
+.nabvar .list li {
+    list-style: none;
+}
+
+.nabvar .list li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    transition: 0.3s;
+}
+nav ul li a:hover {
+    color: rgb(248, 70, 30);
+    border-bottom:1px solid red;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    align-items: center;
+}
+.leftSection{
+    width: 45%;
+    padding: 20px;
+   
+}
+.leftSection h1{
+    font-size: 3.5rem;
+    color: #1b4968;
+    margin-left: 150px;
+    margin-bottom: 15px;
+
+}
+.leftSection h3{
+    margin-left: 150px;
+    font-size: 1.5rem;
+    color:rgb(37, 6, 68);
+
+}
+.leftSection h1 span{
+    color: rgb(78, 25, 158);
+}
+.rightSection{
+    width: 50%;
+    
+}
+.rightSection img {
+    height: 47%;
+    width: 80%;
+}
+ 
+/* my-skills ******************* */
+#about{
+    background-color: #7cc2f1;
+}
+.skills-section{
+    padding: 40px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.myskill .section-title{
+    font-size: 30px;
+    color: #000;
+    font-weight:700;
+    padding: 10px 0;
+    text-align: center;
+}
+.myskill{
+    width: 50%;
+    padding: 100px 10px;
+
+}
+.myskill p {
+    font-size: 20px;
+    color: rgb(0, 7, 12);
+    margin: 10px 14px;
+}
+.bar{
+    width: 100%;
+    height: 10px;
+    background-color: #2f3131;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+
+.skil{
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    height: 10px;
+    text-align:center;
+    border-radius: 10px;
+    font-weight: 500;
+}
+.html{
+    width: 90%;
+    background-image:repeating-linear-gradient(210deg, rgba(101, 119, 101, 0.9)10%,rgb(255, 75, 4)16%);
+}
+  
+.css{
+    width: 80%;
+    background-image:repeating-linear-gradient(210deg, rgba(101, 119, 101, 0.9)10%,rgb(79, 255, 4)16%);
+}.javascript{
+    width: 50%;
+    background-image:repeating-linear-gradient(210deg, rgba(111, 121, 111, 0.9)10%,rgb(4, 63, 255)16%);
+}.photoshop{
+    width: 60%;
+    background-image:repeating-linear-gradient(210deg, rgba(101, 119, 101, 0.9)10%,rgb(255, 4, 213)16%);
+}
+
+.skills-right{
+    width: 50%;
+}
+.image{
+    width: 400px;
+    height: auto;
+}
+.image img{
+    width: 300px;
+   
+    border: 2px solid rgb(159, 69, 69);
+    border-radius: 40px;
+}
+/* *********Services section *********** */
+
+.card{
+    width: 30%;
+    height: 400px;
+    background-color: #c4fee7;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 15px;
+    float: left;
+
+}
+.card h4{
+    font-size: 24px;
+    color: #1b4968;
+    padding: 40px 0;
+    text-transform: uppercase;
+}
+.card ul{
+    list-style: none;
+}
+
+.card ul li {
+    font-size: 18px;
+    line-height: 50px;
+    color: black;
+    opacity: 0.6;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+/* blogs start********************** */
+.bloge-section {
+    margin: 40px 0;
+    width: 100%;
+    height: 100%;
+    background: teal;
+}
+.my-block{
+    display: flex;
+}
+.block-title{
+    font-size: 30px;
+    text-align: center;
+    font-family: 700;
+    color: rgb(247, 25, 25);
+    text-transform: capitalize;
+    padding: 50px 0;
+}
+
+ .block-card{
+    width: 50%;
+    height: 450px;
+    background-color: rgb(190, 138, 211);
+    padding: 30px;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.block-card h4{
+    font-size: 24px;
+    padding: 20px 0;
+
+
+}
+.block-card h5{
+    font-size: 20px;
+    padding-bottom: 20px;
+    
+}
+.block-card span{
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 20px;
+    
+}
+.block-card p{
+    font-size: 16px;
+    
+}
+
+/* contract css starts**************** */
+.form{
+    width: 100%;
+    height: 500px;
+    padding: 30px;
+    margin:0 auto;
+    background-color: #000602;
+    display: flex;
+}
+.form-left{
+    width: 50%;
+    height: 400px;
+}
+.name{
+    width: 70%;
+    height: 80px;
+    margin: 15px;
+}
+label{
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+    color:#fff;
+
+}
+input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    font-size: 20px;
+    
+}
+input:focus{
+    background-color:#c0fbfb;
+    border: 1px solid red;
+}
+.button{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.form-right{
+    width: 50%;
+}
+.comment-l{
+    color: #fefafa;
+}
+.form-right .comment{
+    width: 100%;
+    height: 350px;
+    font-size: 18px;
+    border: none;
+}
+.form-right.comment:focus{
+    background-color: #040c2f;
+}
+/* contract css end**************** */
+.f-section{
+background-color: #1c204c;
+}
+.footer{
+    /* background-color: #150f0f; */
+    color: #fefafa;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+
+}
+.footer h4{
+    color: #e95b1e;
+    font-size: 22px;
+    padding: 10px 0;
+}
+.f-box{
+    width: 33%;
+}
+.location ul{
+    list-style: none;
+
+
+}
+
+.blogd{
+    letter-spacing: 1px;
+line-height: 30px;
+}
+.location ul li{
+    padding: 8px 0;
+}
+
+
+/* *****burger******* */
+
+
+.burger{
+    position: absolute;
+    top: 10px;
+    right: 5%;
+    cursor: pointer;
+    display: none;
+}
+.line{
+    width: 33px;
+    margin-bottom: 5px;
+    height: 5px;
+    background-color: #fff;
+}
+/* .block{
+    flex-direction: column;
+    height: 350px;
+    position: absolute;
+    background-color: #1c204c;
+    top: 59px;
+   display: block;
+} */
+
+
+@media only screen and (max-width:1250px) {
+
+
+
+}
+
+@media only screen and (max-width:768px) {
+    
+    .burger{
+        display: block;
+    }
+
+    .navbar, .list{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #081639;
+        gap: 0;
+        overflow: hidden;
+    }
+    .navbar, .list li{
+        padding: 20px;
+    }
+    .list{
+        transition: 0.5s;
+    }
+.navbar{
+flex-direction: column;
+align-items: center;
+
+}
+
+.hero-section{
+    flex-direction: column-reverse;
+}
+.leftSection h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+}
+.leftSection h3{
+    font-size: 20px;
+    margin-left: 0px;
+}
+.buttons{
+    margin-top: 50px;
+}
+.btn {
+    display: block;
+    margin-top: 15px;
+    padding: 15px 70px;
+    text-align: center;
+}
+.rightSection {
+    width: 100%;
+    padding: 1px 20px;
+    margin: 22px 11px;
+}
+.leftSection{
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.skills-section{
+    
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center
+}
+.myskill{
+    width: 100%;
+}
+.skills-right{
+
+    width: 100%;
+}
+.image{
+    width: 250px;
+    margin: auto;
+}
+.image img{
+    width: 100%;
+}
+.card{
+    width: 90%;
+    height: 80%;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.card-ul li{
+text-align: center;
+color: red;
+padding: 0px;
+
+}
+.block-card {
+    width: 90%;
+    line-height: 35px;
+    font-size: 18px;
+    text-align: center;
+    height: 100%;
+    letter-spacing: 1px;
+}
+.form{
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+}
+input{
+width: 100%;
+}
+.form-right .comment{
+    width: 70%;
+    height: 250px;
+}
+.form-left,.form-right{
+    width: 100%;
+}
+.section-title {
+    margin-top: 39px;
+}
+.f-box {
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+};
