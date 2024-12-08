@@ -6,6 +6,9 @@
     padding: 0px;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 .container{
     width: 90%;
     margin: 0 auto;
@@ -36,7 +39,7 @@ body {
     cursor: pointer;
     border-radius: 10px;
     font-size: 20px;
-    font-size: 19px;
+    font-size: 15px;
     color: #31da59;
     transition: all 0.3s;
     border: 1px solid red;
@@ -59,9 +62,9 @@ a{
     font-size: 30px;
     text-align: center;
     color: rgb(247, 25, 25);
-    text-transform: capitalize;
-    padding: 50px 0;
-    margin: 50px 0;
+    text-transform: uppercase;
+    padding: 40px 0;
+    margin: 40px 0;
  
 }
 
@@ -71,9 +74,8 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin: 0 auto; */
     height: 70px;
-    /* width: 100%; */
+    padding: 0 2%;
     position: fixed;
     position: relative;
 }
@@ -117,23 +119,21 @@ nav ul li a:hover {
 .hero-section {
     display: flex;
     justify-content: space-between;
-    padding: 30px 0;
     align-items: center;
+    padding: 0 2%;
 }
 .leftSection{
-    width: 45%;
-    padding: 20px;
+    width: 50%;
    
 }
 .leftSection h1{
     font-size: 3.5rem;
     color: #1b4968;
-    margin-left: 150px;
     margin-bottom: 15px;
 
 }
 .leftSection h3{
-    margin-left: 150px;
+   
     font-size: 1.5rem;
     color:rgb(37, 6, 68);
 
@@ -146,97 +146,96 @@ nav ul li a:hover {
     
 }
 .rightSection img {
-    height: 47%;
-    width: 80%;
+   width: 100%;
 }
  
 /* my-skills ******************* */
 #about{
     background-color: #7cc2f1;
+    padding: 0 4%;
 }
-.skills-section{
-    padding: 40px 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.myskill .section-title{
+
+.skill-title{
     font-size: 30px;
     color: #000;
     font-weight:700;
-    padding: 10px 0;
     text-align: center;
+}
+
+.skills-section{
+    display: flex;
+    justify-content: space-between;
+
+   
 }
 .myskill{
     width: 50%;
-    padding: 100px 10px;
+ 
+ 
 
 }
-.myskill p {
-    font-size: 20px;
-    color: rgb(0, 7, 12);
-    margin: 10px 14px;
+.skill-tech{
+    padding: 4% 0;
 }
-.bar{
+.skill-tech p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(0, 7, 12);
+    padding: 12px 0;
+    position: relative;
+}
+
+.skill-tech p::after{
+    content: " ";
+    position: absolute;
     width: 100%;
     height: 10px;
-    background-color: #2f3131;
+    background-color:#fefafa ;
+    display: block;
+    margin: 10px 0;
     border-radius: 10px;
-    border: 1px solid #fff;
+
 }
 
-.skil{
-    font-size: 1em;
-    color: rgb(255, 255, 255);
-    height: 10px;
-    text-align:center;
-    border-radius: 10px;
-    font-weight: 500;
-}
-.html{
-    width: 90%;
-    background-image:repeating-linear-gradient(210deg, rgba(101, 119, 101, 0.9)10%,rgb(255, 75, 4)16%);
-}
-  
-.css{
-    width: 80%;
-    background-image:repeating-linear-gradient(210deg, rgba(101, 119, 101, 0.9)10%,rgb(79, 255, 4)16%);
-}.javascript{
-    width: 50%;
-    background-image:repeating-linear-gradient(210deg, rgba(111, 121, 111, 0.9)10%,rgb(4, 63, 255)16%);
-}.photoshop{
-    width: 60%;
-    background-image:repeating-linear-gradient(210deg, rgba(101, 119, 101, 0.9)10%,rgb(255, 4, 213)16%);
-}
 
 .skills-right{
     width: 50%;
+   padding: 2% 0;
+
 }
 .image{
-    width: 400px;
-    height: auto;
+ width: 100%;
+ text-align: center;
 }
 .image img{
-    width: 300px;
-   
+    width: 70%;
     border: 2px solid rgb(159, 69, 69);
     border-radius: 40px;
 }
 /* *********Services section *********** */
-
+.service-card{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+}
 .card{
-    width: 30%;
-    height: 400px;
-    background-color: #c4fee7;
+    background-color:  rgb(17, 16, 50);;
     text-align: center;
     border-radius: 10px;
-    margin: 0 15px;
-    float: left;
+    padding: 3rem;
+    transition: 0.5s all;
+    width: 33%;
+   
 
+}
+.card:hover{
+    transform: translateY(-20px);
 }
 .card h4{
     font-size: 24px;
-    color: #1b4968;
+    color: #f3f7f9;
     padding: 40px 0;
     text-transform: uppercase;
 }
@@ -246,41 +245,44 @@ nav ul li a:hover {
 
 .card ul li {
     font-size: 18px;
-    line-height: 50px;
-    color: black;
-    opacity: 0.6;
+    line-height: 1.9;
+    color: rgb(243, 236, 236);
     letter-spacing: 1px;
-    font-weight: 500;
+    font-weight: 300;
+    opacity: 0.6;
+   
 }
 
 /* blogs start********************** */
 .bloge-section {
-    margin: 40px 0;
-    width: 100%;
-    height: 100%;
-    background: teal;
+   padding: 2% 0;
+    background: #95a4de;
 }
 .my-block{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
 .block-title{
     font-size: 30px;
     text-align: center;
     font-family: 700;
-    color: rgb(247, 25, 25);
+    color: #0a0a0a;
     text-transform: capitalize;
     padding: 50px 0;
 }
 
  .block-card{
-    width: 50%;
-    height: 450px;
-    background-color: rgb(190, 138, 211);
-    padding: 30px;
-    margin: 20px;
+    background-color: rgb(188, 175, 193);
     overflow: hidden;
     border-radius: 15px;
+    padding: 1.4rem;
+    transition: 0.3s;
+    width: 33%;
+
 }
+
 .block-card h4{
     font-size: 24px;
     padding: 20px 0;
@@ -309,15 +311,15 @@ nav ul li a:hover {
     height: 500px;
     padding: 30px;
     margin:0 auto;
-    background-color: #000602;
+    background-color: #41e176;
     display: flex;
 }
 .form-left{
     width: 50%;
-    height: 400px;
+    padding: 3rem
 }
 .name{
-    width: 70%;
+    width: 100%;
     height: 80px;
     margin: 15px;
 }
@@ -334,15 +336,26 @@ input{
     outline: none;
     border-radius: 5px;
     font-size: 20px;
+    outline: none;
+    border: none;
     
 }
 input:focus{
-    background-color:#c0fbfb;
-    border: 1px solid red;
+    padding-left: 1rem;
 }
-.button{
-    margin-top: 20px;
-    margin-left: 15px;
+
+.f-btn{
+    width: 100%;
+    background-color: #1c204c;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+    color: white;
+   
+}
+.f-btn a{
+    color: #fff;
 }
 .form-right{
     width: 50%;
@@ -355,13 +368,20 @@ input:focus{
     height: 350px;
     font-size: 18px;
     border: none;
+    resize: none;
+    border-radius: 10px;
 }
 .form-right.comment:focus{
     background-color: #040c2f;
 }
+
+
 /* contract css end**************** */
+
+
 .f-section{
 background-color: #1c204c;
+padding: 1%;
 }
 .footer{
     /* background-color: #150f0f; */
@@ -421,19 +441,27 @@ line-height: 30px;
 } */
 
 
-@media only screen and (max-width:1250px) {
+@media only screen and (max-width:760px)  {
 
-
+  
+ .my-block, .service-card{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.card, .block-card{
+    width: 50%;
+}
 
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:600px) {
     
     .burger{
         display: block;
     }
 
-    .navbar, .list{
+   .list{
         position: absolute;
         top: 70px;
         left: 0;
@@ -443,6 +471,7 @@ line-height: 30px;
         background: #081639;
         gap: 0;
         overflow: hidden;
+        opacity: 0;
     }
     .navbar, .list li{
         padding: 20px;
@@ -476,6 +505,7 @@ align-items: center;
     margin-top: 15px;
     padding: 15px 70px;
     text-align: center;
+    margin-bottom: 20px;
 }
 .rightSection {
     width: 100%;
@@ -491,14 +521,21 @@ align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
 }
+#about{
+    padding: 2% 2%;
+}
 .skills-section{
-    
     display: flex;
     flex-direction: column-reverse;
     justify-content: center
 }
 .myskill{
     width: 100%;
+}
+.myskill , .section-title{
+    margin: 0;
+    padding: 0;
+
 }
 .skills-right{
 
@@ -511,26 +548,28 @@ align-items: center;
 .image img{
     width: 100%;
 }
+.service-card{
+    padding: 2%;
+    flex-direction: column;
+    gap: 2rem;
+}
 .card{
-    width: 90%;
-    height: 80%;
-    text-align: center;
-    margin-bottom: 80px;
+   width: 100%;
+    margin-bottom:1rem;
 }
 
 .card-ul li{
 text-align: center;
-color: red;
+color: rgb(229, 129, 129);
 padding: 0px;
 
 }
 .block-card {
-    width: 90%;
     line-height: 35px;
     font-size: 18px;
     text-align: center;
-    height: 100%;
     letter-spacing: 1px;
+    width: 100%;
 }
 .form{
     flex-direction: column;
@@ -541,8 +580,10 @@ input{
 width: 100%;
 }
 .form-right .comment{
-    width: 70%;
+    width: 100%;
     height: 250px;
+    resize: none;
+    outline: none;
 }
 .form-left,.form-right{
     width: 100%;
@@ -550,10 +591,15 @@ width: 100%;
 .section-title {
     margin-top: 39px;
 }
+.f-section{
+    margin: 2%;
+}
 .f-box {
-    margin-top: 50px;
+    padding: 4%;
     width: 100%;
     text-align: center;
 }
 
 };
+
+
